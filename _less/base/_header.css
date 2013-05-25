@@ -1,17 +1,3 @@
-.clearfix {
-  zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-body {
-  margin: 0 auto;
-}
 body {
   border-top: 8px solid #000000;
 }
@@ -60,7 +46,4 @@ header nav ul li {
 }
 header nav ul .four {
   margin-left: 220px;
-}
-body {
-  font-family: ff-tisa-web-pro;
 }
