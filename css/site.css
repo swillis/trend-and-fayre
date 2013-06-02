@@ -39,8 +39,45 @@ header nav ul li a {
 header nav ul li a:hover {
   border-bottom: 5px solid black;
 }
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+h1 a:hover {
+  border-bottom: 5px solid black;
+}
+.left-side {
+  position: absolute;
+  top: 35%;
+  left: 10px;
+  z-index: 10;
+}
+.left-side h1 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+.left-side img {
+  position: absolute;
+  top: 200px;
+  left: 93px;
+}
+.right-side {
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  z-index: 10;
+}
 body {
   font-family: futura-pt;
+}
+body p {
+  color: #626262;
 }
 @font-face {
   font-family: 'entypo';
@@ -57,35 +94,11 @@ i.icon {
 }
 .homepage {
   position: relative;
-}
-.homepage h1 {
-  font-size: 40px;
-  font-weight: 400;
-}
-.homepage h1 a:hover {
-  border-bottom: 5px solid black;
+  z-index: 1;
 }
 .homepage section {
   max-width: 960px;
   margin: 0 auto;
-}
-.homepage .left-side {
-  position: absolute;
-  top: 40%;
-  left: 10px;
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-}
-.homepage .right-side {
-  position: absolute;
-  top: 40%;
-  right: 10px;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
 }
 /*
  * jQuery FlexSlider v2.0
@@ -290,4 +303,58 @@ html[xmlns] .slides {
     opacity: 1;
     right: 0;
   }
+}
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog h2 {
+  font-family: "futura-pt-condensed";
+  font-size: 40px;
+  text-align: center;
+}
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.content {
+  max-height: 450px;
+  overflow-y: auto;
+}
+.modalDialog > div {
+  width: 600px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  background: #fff;
+}
+.close {
+  background: black;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: 310px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+  background: #00d9ff;
+}
+h1.coming {
+  text-align: center;
+  margin-top: 100px;
 }
