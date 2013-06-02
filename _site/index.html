@@ -10,107 +10,72 @@
         <link rel="stylesheet" href="css/site.css">
         <script type="text/javascript" src="//use.typekit.net/coq2nwt.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    </head>
+        </head>
     <body>
 
-
-      <header class='container'>
-  <h1>Trend & Fayre</h1>
-  <h2>by Kiri Barker</h2>
-  <img src="img/nav-circle-logo.png">
+      <header>
   <nav>
     <ul>
-      <li class='one'><a href="">Home</a></li>
-      <li class='two'><a href="">Portfolio</a></li>
-      <li class='three'><a href="">Services</a></li>
-      <li class='four'><a href="">Moodboard</a></li>
-      <li class='five'><a href="">About</a></li>
-      <li class='six'><a href="">Contact</a></li>
+      <!-- <li class='one'><a href="">HOME</a></li> -->
+      <li class='two'><a href="">THE STORY</a></li>
+      <li class='three'><a href="">SERVICES</a></li>
+      <li class='four'><a href="">PORTFOLIO</a></li>
+      <li class='five'><a href="">MOODBAORD</a></li>
+      <li class='six'><a href="">CONTACT</a></li>
     </ul>
   </nav>
 </header>
 
-<div class="slider-wrap">
-  <div class="slider" id="slider">
-    <div class="holder">
-      <div class="slide" id="slide-0"><span class="temp">Designed by Kiri Barker.</span></div>
-      <div class="slide" id="slide-1"><span class="temp">Designed by Kiri Barker.</span></div>
-        <div class="slide" id="slide-2"><span class="temp">Designed by Kiri Barker.</span></div>
+<div class='homepage'>
+  <section class="slider">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="img/kitchen_adventurer_cheesecake_brownie.jpg" />
+        </li>
+        <li>
+          <img src="img/kitchen_adventurer_lemon.jpg" />
+        </li>
+        <li>
+          <img src="img/kitchen_adventurer_donut.jpg" />
+        </li>
+        <li>
+          <img src="img/kitchen_adventurer_caramel.jpg" />
+        </li>
+      </ul>
     </div>
+  </section>
+
+  <div class='left-side'>
+    <h1><a href="">TREND & FAYRE</a></h1>
   </div>
-  <nav class="slider-nav">
-    <a href="#slide-0" class="active">Slide 0</a> 
-    <a href="#slide-1">Slide 1</a> 
-    <a href="#slide-2">Slide 2</a> 
-  </nav>
-</div>
 
-<div class='container'>
-
-  <div class='service-articles'>
-
-    <div class='service one'>
-      <i class='icon'>&#127758</i>
-      <h3><a href="">Sourcing</a></h3>
-      <p>Some placeholder text about sourcing that hopefully isnt too long and going to break...</p>
-    </div>
-
-    <div class='service one'>
-      <i class='icon'>&#8962</i>
-      <h3><a href="">Interior Design</a></h3>
-      <p>Some placeholder text about sourcing that hopefully isnt too long and going to break...</p>
-    </div>
-
-    <div class='service one'>
-      <i class='icon'>&#127912</i>
-      <h3><a href="">E-decorating</a></h3>
-      <p>Some placeholder text about sourcing that hopefully isnt too long and going to break...</p>
-    </div>
-
-    <div class='service one'>
-      <i class='icon'>&#59197</i>
-      <h3><a href="">Online Shop</a></h3>
-      <p>Some placeholder text about sourcing that hopefully isnt too long and going to break...</p>
-    </div>
-
+  <div class='right-side'>
+    <h1><a href="">ONLINE SHOP</a></h1>
   </div>
 
 </div>
 
-<div class='container contact'>
-  <h2>Get in touch</h2>
-  <img src="img/bio-pic.png">
-
-  <div class='contact-articles'>
-
-    <div class='details one'>
-      <i class='icon'>&#128100;</i><p>Kiri Barker</p><br>
-      <i class='icon'>&#128222;</i><p>07789937838</p><br>
-      <i class='icon'>&#9993;</i><p>hello@trendandfayre.com</p>
-    </div>
-
-    <div class='details two'>
-      <p>We don't want to write loads here, but providing a short bio that describes what our goals are would be nice. It should be concise and punchy, and make the reader want to buy, buy, buy!</p>
-    </div>
-
-    <div class='details three'>
-      <i class='icon'>&#59172;</i><p>31 Lawford Road</p><br>
-      <p>London</p><br>
-      <p>NW5 2LG</p>
-    </div>
-
-  </div>
-
-</div>
-
-<div class='footer container'>
-  <h4>&copy; Trend and Fayre</h4>
-  <h4>Like Tweet</h4>
-</div>
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
       <script src="js/slider.js"></script>
+
+      <script defer src="js/jquery.flexslider-min.js"></script>
+  
+      <script type="text/javascript">
+        $(function(){
+          SyntaxHighlighter.all();
+        });
+        $(window).load(function(){
+          $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider){
+              $('body').removeClass('loading');
+            }
+          });
+        });
+      </script>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>

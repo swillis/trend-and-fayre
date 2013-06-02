@@ -1,57 +1,23 @@
-body {
-  border-top: 8px solid #000000;
-}
-
 header {
-  margin: 0 auto;
-  max-width: 960px;
-  position: relative;
   text-align: center;
-  border-bottom: 8px solid #000000;
-
-
-  h1, h2 {
-    font-weight: 400;
-  }
-
-  h1 {
-    margin-top: 10px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 3em;
-  }
-
-  h2 {
-    text-transform: uppercase;
-    font-size: 1.3em;
-    margin-top: -30px;
-  }
-
-  img {
-    margin-top: 10px;
-    margin-bottom: 25px;
-  }
-
+  margin-top: 40px;
+  margin-bottom: 40px;
   nav {
-    position: absolute;
-    top: 63%;
-    left: 9%;
-
     ul {
-      margin: 0;
-      padding: 0;
-      // border-bottom: 5px solid black;
       li {
         display: inline;
-        margin: 20px;
+        margin: 10px;
+        font-size: 28px;
+        text-transform: capitalize;
 
         a {
           text-decoration: none;
-          color: #000000;
+          color: @primary;
+
+          &:hover {
+            border-bottom: 5px solid black;
+          }
         }
-      }
-      .four {
-        margin-left: 220px;
       }
     }
   }
