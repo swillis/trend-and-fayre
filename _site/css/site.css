@@ -47,9 +47,9 @@ h1 a:hover {
   border-bottom: 5px solid black;
 }
 .left-side {
-  position: absolute;
-  top: 35%;
-  left: 10px;
+  position: fixed;
+  top: 290px;
+  left: -2%;
   z-index: 10;
 }
 .left-side h1 {
@@ -60,13 +60,13 @@ h1 a:hover {
 }
 .left-side img {
   position: absolute;
-  top: 200px;
-  left: 93px;
+  top: 220px;
+  left: 35%;
 }
 .right-side {
-  position: absolute;
-  top: 35%;
-  right: 10px;
+  position: fixed;
+  top: 290px;
+  right: -2%;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -97,7 +97,7 @@ i.icon {
   z-index: 1;
 }
 .homepage section {
-  max-width: 960px;
+  width: 65%;
   margin: 0 auto;
 }
 /*
@@ -173,10 +173,6 @@ html[xmlns] .slides {
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   zoom: 1;
 }
 .flex-viewport {
@@ -323,6 +319,14 @@ html[xmlns] .slides {
   font-size: 40px;
   text-align: center;
 }
+.modalDialog h3 {
+  text-align: center;
+  font-family: "futura-pt-condensed";
+  font-size: 24px;
+}
+.modalDialog .bio-pic {
+  text-align: center;
+}
 .modalDialog:target {
   opacity: 1;
   pointer-events: auto;
@@ -333,6 +337,7 @@ html[xmlns] .slides {
 }
 .modalDialog > div {
   width: 600px;
+  height: 60%;
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
@@ -340,19 +345,24 @@ html[xmlns] .slides {
 }
 .close {
   background: black;
+  font-size: 35px;
   color: #FFFFFF;
-  line-height: 25px;
+  line-height: 35px;
   position: absolute;
-  right: 310px;
+  right: 300px;
   text-align: center;
   top: -10px;
-  width: 24px;
+  width: 35px;
   text-decoration: none;
   font-weight: bold;
   box-shadow: 1px 1px 3px #000;
 }
 .close:hover {
   background: #00d9ff;
+}
+.modal-properties {
+  overflow: scroll;
+  height: 100%;
 }
 h1.coming {
   text-align: center;
