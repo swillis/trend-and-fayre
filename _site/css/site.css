@@ -61,7 +61,7 @@ h1 a:hover {
 .left-side img {
   position: absolute;
   top: 220px;
-  left: 35%;
+  left: 36%;
 }
 .right-side {
   position: fixed;
@@ -400,33 +400,4 @@ html[xmlns] .slides {
   font-family: "futura-pt-condensed";
   font-weight: 700;
   font-size: 24px;
-}
-html {
-  background-image: url('../img/landing-page-image.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-html .landing-page {
-  text-align: center;
-  margin-top: 5%;
-}
-html .landing-page img {
-  margin-bottom: -50px;
-}
-html .landing-page h1,
-html .landing-page p,
-html .landing-page a {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 5px #000000;
-}
-html .landing-page h1 {
-  font-size: 100px;
-}
-html .landing-page p,
-html .landing-page a {
-  font-size: 24px;
-  letter-spacing: 2px;
 }
