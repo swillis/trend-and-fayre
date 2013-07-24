@@ -37,7 +37,7 @@ header nav ul li a {
   color: #000000;
 }
 header nav ul li a:hover {
-  border-bottom: 5px solid black;
+  border-bottom: 0.5px solid black;
 }
 h1 {
   font-size: 40px;
@@ -356,20 +356,6 @@ html[xmlns] .slides {
   padding: 5px 20px 13px 20px;
   background: #fff;
 }
-.close {
-  background: black;
-  font-size: 35px;
-  color: #FFFFFF;
-  line-height: 35px;
-  position: absolute;
-  right: 300px;
-  text-align: center;
-  top: -10px;
-  width: 35px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 1px 1px 3px #000;
-}
 .close:hover {
   background: #00d9ff;
 }
@@ -400,4 +386,42 @@ html[xmlns] .slides {
   font-family: "futura-pt-condensed";
   font-weight: 700;
   font-size: 24px;
+}
+.portfolio * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.portfolio body {
+  font-family: sans-serif;
+}
+.portfolio .masonry {
+  background: #EEE;
+}
+.portfolio .masonry .item {
+  width: 180px;
+  height: 180px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.portfolio .item.w2 {
+  width: 240px;
+}
+.portfolio .item.w3 {
+  width: 360px;
+}
+.portfolio .item.w4 {
+  width: 480px;
+}
+.portfolio .item.h2 {
+  height: 200px;
+}
+.portfolio .item.h3 {
+  height: 260px;
+}
+.portfolio .item.h4 {
+  height: 360px;
 }

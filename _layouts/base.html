@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/site.css">
         <script type="text/javascript" src="//use.typekit.net/coq2nwt.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" src='js/masonry.js'></script>
         </head>
     <body>
 
@@ -42,6 +43,14 @@
           (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
           g.src='//www.google-analytics.com/ga.js';
           s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+      <script type="text/javascript">
+        var container = document.querySelector('#container');
+        var msnry = new Masonry( container, {
+          // options
+          columnWidth: 300,
+          itemSelector: '.item'
+        });
       </script>
   </body>
 </html>
