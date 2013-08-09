@@ -99,6 +99,8 @@
         $(window).load(function(){
           $('.flexslider').flexslider({
             animation: "slide",
+            directionNav: false,
+            controlNav: false,
             start: function(slider){
               $('body').removeClass('loading');
             }
@@ -121,5 +123,24 @@
           itemSelector: '.item'
         });
       </script>
+
+      <script type="text/javascript">
+
+        $
+
+        $(window).resize(function(){
+           console.log('resize called');
+           var width = $(window).width();
+           if(width < 890){
+               $('.left-side, .right-side').fadeOut(300);
+           }
+           else{
+            $('.left-side, .right-side').fadeIn(300);
+           }
+        })
+        .resize();
+
+      </script>
+
   </body>
 </html>
