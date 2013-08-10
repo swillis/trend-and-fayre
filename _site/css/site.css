@@ -21,10 +21,18 @@ a {
   position: relative;
   margin: 0 auto;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 header {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 20px 0;
+}
+header nav {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
 }
 header nav ul li {
   display: inline;
@@ -37,7 +45,12 @@ header nav ul li a {
   color: #000000;
 }
 header nav ul li a:hover {
-  border-bottom: 0.5px solid black;
+  border-bottom: 3px solid black;
+}
+header nav img {
+  position: absolute;
+  left: -121px;
+  top: 0px;
 }
 h1 {
   font-size: 60px;
@@ -46,27 +59,33 @@ h1 {
 h1 a:hover {
   border-bottom: 5px solid black;
 }
-.left-side {
-  position: fixed;
-  top: 260px;
-  left: -5%;
-  z-index: 10;
+#left-and-right {
+  margin: 0 auto;
+  max-height: 600px;
+  width: 65%;
+  position: relative;
 }
-.left-side h1 {
+#left-and-right .left-side {
+  position: absolute;
+  top: 250px;
+  left: -245px;
+  z-index: 100;
+}
+#left-and-right .left-side h1 {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   -o-transform: rotate(270deg);
 }
-.left-side img {
+#left-and-right .left-side img {
   position: absolute;
-  top: 300px;
+  top: 260px;
   left: 41%;
 }
-.right-side {
-  position: fixed;
-  top: 260px;
-  right: -5%;
+#left-and-right .right-side {
+  position: absolute;
+  top: 250px;
+  right: -233px;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -95,54 +114,69 @@ i.icon {
 .homepage {
   position: relative;
   z-index: 1;
+  /*
+	 * jQuery FlexSlider v2.0
+	 * http://www.woothemes.com/flexslider/
+	 *
+	 * Copyright 2012 WooThemes
+	 * Free to use under the GPLv2 license.
+	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 *
+	 * Contributing author: Tyler Smith (@mbmufffin)
+	 */
+
+  /* Browser Resets */
+
+  /* FlexSlider Necessary Styles
+	*********************************/
+  /* Hide the slides before the JS is loaded. Avoids image jumping */
+
+  /* Clearfix for the .slides element */
+
+  /* No JavaScript Fallback */
+
+  /* If you are not using another script, such as Modernizr, make sure you
+	 * include js that eliminates this class on page load */
+
+  /* FlexSlider Default Theme
+	*********************************/
+
+  /* Control Nav */
+
 }
 .homepage section {
   width: 65%;
   margin: 0 auto;
 }
-/*
- * jQuery FlexSlider v2.0
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the GPLv2 license.
- * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Contributing author: Tyler Smith (@mbmufffin)
- */
-/* Browser Resets */
-.flex-container a:active,
-.flexslider a:active,
-.flex-container a:focus,
-.flexslider a:focus {
+.homepage .flex-container a:active,
+.homepage .flexslider a:active,
+.homepage .flex-container a:focus,
+.homepage .flexslider a:focus {
   outline: none;
 }
-.slides,
-.flex-control-nav,
-.flex-direction-nav {
+.homepage .slides,
+.homepage .flex-control-nav,
+.homepage .flex-direction-nav {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* FlexSlider Necessary Styles
-*********************************/.flexslider {
+.homepage .flexslider {
   margin: 0;
   padding: 0;
 }
-.flexslider .slides > li {
+.homepage .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
-/* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {
+.homepage .flexslider .slides img {
   width: 100%;
   display: block;
 }
-.flex-pauseplay span {
+.homepage .flex-pauseplay span {
   text-transform: capitalize;
 }
-/* Clearfix for the .slides element */
-.slides:after {
+.homepage .slides:after {
   content: ".";
   display: block;
   clear: both;
@@ -150,21 +184,16 @@ i.icon {
   line-height: 0;
   height: 0;
 }
-html[xmlns] .slides {
+.homepage html[xmlns] .slides {
   display: block;
 }
-* html .slides {
+.homepage * html .slides {
   height: 1%;
 }
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .slides > li:first-child {
+.homepage .no-js .slides > li:first-child {
   display: block;
 }
-/* FlexSlider Default Theme
-*********************************/
-.flexslider {
+.homepage .flexslider {
   margin: 0 0 60px;
   background: #fff;
   border: 4px solid #fff;
@@ -175,25 +204,25 @@ html[xmlns] .slides {
   border-radius: 4px;
   zoom: 1;
 }
-.flex-viewport {
+.homepage .flex-viewport {
   max-height: 600px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
 }
-.loading .flex-viewport {
+.homepage .loading .flex-viewport {
   max-height: 300px;
 }
-.flexslider .slides {
+.homepage .flexslider .slides {
   zoom: 1;
 }
-.carousel li {
+.homepage .carousel li {
   margin-right: 5px;
 }
-.flex-direction-nav {
+.homepage .flex-direction-nav {
   *height: 0;
 }
-.flex-direction-nav a {
+.homepage .flex-direction-nav a {
   width: 30px;
   height: 30px;
   margin: -20px 0 0;
@@ -207,44 +236,43 @@ html[xmlns] .slides {
   opacity: 0;
   -webkit-transition: all .3s ease;
 }
-.flex-direction-nav .flex-next {
+.homepage .flex-direction-nav .flex-next {
   background-position: 100% 0;
   right: -36px;
 }
-.flex-direction-nav .flex-prev {
+.homepage .flex-direction-nav .flex-prev {
   left: -36px;
 }
-.flexslider:hover .flex-next {
+.homepage .flexslider:hover .flex-next {
   opacity: 0.8;
   right: 5px;
 }
-.flexslider:hover .flex-prev {
+.homepage .flexslider:hover .flex-prev {
   opacity: 0.8;
   left: 5px;
 }
-.flexslider:hover .flex-next:hover,
-.flexslider:hover .flex-prev:hover {
+.homepage .flexslider:hover .flex-next:hover,
+.homepage .flexslider:hover .flex-prev:hover {
   opacity: 1;
 }
-.flex-direction-nav .flex-disabled {
+.homepage .flex-direction-nav .flex-disabled {
   opacity: .3!important;
   filter: alpha(opacity=30);
   cursor: default;
 }
-/* Control Nav */
-.flex-control-nav {
+.homepage .flex-control-nav {
   width: 100%;
   position: absolute;
   bottom: -40px;
   text-align: center;
 }
-.flex-control-nav li {
+.homepage .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
   *display: inline;
 }
-.flex-control-paging li a {
+.homepage .flex-control-paging li a {
   width: 11px;
   height: 11px;
   display: block;
@@ -258,44 +286,44 @@ html[xmlns] .slides {
   border-radius: 20px;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 }
-.flex-control-paging li a:hover {
+.homepage .flex-control-paging li a:hover {
   background: #333;
   background: rgba(0, 0, 0, 0.7);
 }
-.flex-control-paging li a.flex-active {
+.homepage .flex-control-paging li a.flex-active {
   background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
-.flex-control-thumbs {
+.homepage .flex-control-thumbs {
   margin: 5px 0 0;
   position: static;
   overflow: hidden;
 }
-.flex-control-thumbs li {
+.homepage .flex-control-thumbs li {
   width: 25%;
   float: left;
   margin: 0;
 }
-.flex-control-thumbs img {
+.homepage .flex-control-thumbs img {
   width: 100%;
   display: block;
   opacity: .7;
   cursor: pointer;
 }
-.flex-control-thumbs img:hover {
+.homepage .flex-control-thumbs img:hover {
   opacity: 1;
 }
-.flex-control-thumbs .flex-active {
+.homepage .flex-control-thumbs .flex-active {
   opacity: 1;
   cursor: default;
 }
 @media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev {
+  .homepage .flex-direction-nav .flex-prev {
     opacity: 1;
     left: 0;
   }
-  .flex-direction-nav .flex-next {
+  .homepage .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0;
   }
@@ -387,41 +415,276 @@ html[xmlns] .slides {
   font-weight: 700;
   font-size: 24px;
 }
-.portfolio * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.portfolio {
+  /*
+	 * jQuery FlexSlider v2.0
+	 * http://www.woothemes.com/flexslider/
+	 *
+	 * Copyright 2012 WooThemes
+	 * Free to use under the GPLv2 license.
+	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 *
+	 * Contributing author: Tyler Smith (@mbmufffin)
+	 */
+
+  /* Browser Resets */
+
+  /* FlexSlider Necessary Styles
+	*********************************/
+  /* Hide the slides before the JS is loaded. Avoids image jumping */
+
+  /* Clearfix for the .slides element */
+
+  /* No JavaScript Fallback */
+
+  /* If you are not using another script, such as Modernizr, make sure you
+	 * include js that eliminates this class on page load */
+
+  /* FlexSlider Default Theme
+	*********************************/
+
+  /* Control Nav */
+
 }
-.portfolio body {
-  font-family: sans-serif;
+.portfolio .flex-container a:active,
+.portfolio .flexslider a:active,
+.portfolio .flex-container a:focus,
+.portfolio .flexslider a:focus {
+  outline: none;
 }
-.portfolio .masonry {
-  background: #EEE;
+.portfolio .slides,
+.portfolio .flex-control-nav,
+.portfolio .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.portfolio .masonry .item {
-  width: 180px;
-  height: 180px;
+.portfolio .flexslider {
+  margin: 0;
+  padding: 0;
+}
+.portfolio .flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.portfolio .flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+.portfolio .flex-pauseplay span {
+  text-transform: capitalize;
+}
+.portfolio .slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.portfolio html[xmlns] .slides {
+  display: block;
+}
+.portfolio * html .slides {
+  height: 1%;
+}
+.portfolio .no-js .slides > li:first-child {
+  display: block;
+}
+.portfolio .flexslider {
+  margin: 0 0 60px;
+  background: #fff;
+  border: 4px solid #fff;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  zoom: 1;
+}
+.portfolio .flex-viewport {
+  max-height: 600px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.portfolio .loading .flex-viewport {
+  max-height: 300px;
+}
+.portfolio .flexslider .slides {
+  zoom: 1;
+}
+.portfolio .carousel li {
+  margin-right: 5px;
+}
+.portfolio .flex-direction-nav {
+  *height: 0;
+}
+.portfolio .flex-direction-nav a {
+  width: 30px;
+  height: 30px;
+  margin: -20px 0 0;
+  display: block;
+  background: url(images/bg_direction_nav.png) no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+}
+.portfolio .flex-direction-nav .flex-next {
+  background-position: 100% 0;
+  right: -36px;
+}
+.portfolio .flex-direction-nav .flex-prev {
+  left: -36px;
+}
+.portfolio .flexslider:hover .flex-next {
+  opacity: 0.8;
+  right: 5px;
+}
+.portfolio .flexslider:hover .flex-prev {
+  opacity: 0.8;
+  left: 5px;
+}
+.portfolio .flexslider:hover .flex-next:hover,
+.portfolio .flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+.portfolio .flex-direction-nav .flex-disabled {
+  opacity: .3!important;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+.portfolio .flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+.portfolio .flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.portfolio .flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.portfolio .flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+.portfolio .flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+.portfolio .flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+.portfolio .flex-control-thumbs li {
+  width: 25%;
   float: left;
-  background: #D26;
-  border: 2px solid #333;
-  border-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+  margin: 0;
 }
-.portfolio .item.w2 {
-  width: 240px;
+.portfolio .flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
 }
-.portfolio .item.w3 {
-  width: 360px;
+.portfolio .flex-control-thumbs img:hover {
+  opacity: 1;
 }
-.portfolio .item.w4 {
-  width: 480px;
+.portfolio .flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
 }
-.portfolio .item.h2 {
-  height: 200px;
+@media screen and (max-width: 860px) {
+  .portfolio .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0;
+  }
+  .portfolio .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0;
+  }
 }
-.portfolio .item.h3 {
-  height: 260px;
+.story-box a:hover {
+  border-bottom: 2px solid black;
 }
-.portfolio .item.h4 {
-  height: 360px;
+.story-box h2,
+.story-box h3 {
+  font-family: "futura-pt-condensed";
+  text-align: center;
+}
+.story-box h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.story-box h3 {
+  font-size: 24px;
+}
+.story-box > div {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px 20px 13px 20px;
+  background: white;
+  overflow: auto;
+}
+#background {
+  padding: 20px 0;
+  margin: 0 auto;
+  max-height: 600px;
+  width: 65%;
+  height: 600px;
+  position: relative;
+}
+.story-bg {
+  background: url('../img/the-story.jpg') no-repeat top center;
+}
+.services {
+  background: url('../img/landing-page-image.jpg') no-repeat center top;
+}
+.services .service-buttons {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  margin-left: -321px;
+}
+.services .service-buttons a.service {
+  color: white;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 3px solid #adadad;
+  width: 200px;
+  margin: 10px;
+  font-size: 24px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+}
+.services .service-buttons a.service:hover {
+  border: 3px solid white;
 }

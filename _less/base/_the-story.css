@@ -1,0 +1,33 @@
+.story-box a:hover {
+  border-bottom: 2px solid black;
+}
+.story-box h2,
+.story-box h3 {
+  font-family: "futura-pt-condensed";
+  text-align: center;
+}
+.story-box h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.story-box h3 {
+  font-size: 24px;
+}
+.story-box > div {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px 20px 13px 20px;
+  background: white;
+  overflow: auto;
+}
+#background {
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 1240px;
+  height: 600px;
+}
+.story-bg {
+  background: url('../img/the-story.jpg') no-repeat top center;
+}
