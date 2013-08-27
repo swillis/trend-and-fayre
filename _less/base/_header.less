@@ -11,13 +11,14 @@ header {
     position: relative;
     max-width: 900px;
     margin: 0 auto;
+    z-index: 9999;
     ul {
       li {
         display: inline;
         margin: 10px;
         font-size: 28px;
         text-transform: capitalize;
-
+        position: relative;
         a {
           text-decoration: none;
           color: @primary;
@@ -25,6 +26,27 @@ header {
           &:hover {
             border-bottom: 3px solid black;
           }
+        }
+        &:hover > ul {
+          display: block;
+        }
+      }
+      ul {
+        display: none;
+        position: absolute;
+        top: 35px;
+        border-top: 3px solid black;
+        .box-shadow(0 1px 3px rgba(0, 0, 0, 0.25));
+
+        li {
+          display: block;
+          position: relative;
+          background: white;
+          padding: 10px;
+          margin: 0;
+          text-transform: uppercase;
+          font-size: 0.75em;
+          width: 114px;
         }
       }
     }
