@@ -1,27 +1,31 @@
 .services {
-	background: url('../img/landing-page-image.jpg') no-repeat center top;
+	margin: 0 auto;
 
-	.service-buttons {
-		position: absolute;
-		top: 46%;
-		left: 50%;
-		margin-left: -321px;
+	.service-polaroids {
+		clear: both;
+		display: table;
+		margin: 13% auto 0;
+	}
 
-		a.service {
-			color: white;
-			padding: 10px;
-			letter-spacing: 1px;
-			text-transform: uppercase;
-			border: 3px solid #adadad;
-			width: 200px;
-			margin: 10px;
-			font-size: 24px;
-			.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.75));
-			.transition (all 300ms ease-out);
-		}
+	.polaroid {
+		float: left;
+		margin: 0 6px;
+	}
 
-		a.service:hover {
-			border: 3px solid white;
-		}
+	.interior-design {
+		.transform (rotate(355deg));
+	}
+
+	.sourcing {
+
+	}
+
+	.consulting {
+		.transform (rotate(5deg));
+	}
+
+	.interior-design,
+	.consulting {
+		padding-top: 30px;
 	}
 }
