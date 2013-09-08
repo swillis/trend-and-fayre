@@ -16,15 +16,14 @@
 
       <header>
   <nav>
-    <ul>
+    <ul class='header-ul'>
       <!-- <li class='one'><a href="">HOME</a></li> -->
-      <li class='two'><a href="the-story.html">THE STORY</a></li>
-      <li class='three'><a href="services.html">SERVICES</a></li>
-      <li class='four'>
-        <a href="portfolio.html">PORTFOLIO</a>
-      </li>
-      <li class='five'><a href="http://trendandfayre.tumblr.com/"target="_blank">MOODBOARD</a></li>
-      <li class='six'><a href="contact.html">CONTACT</a></li>
+      <li><a  class='hide'href="index.html">HOME</a></li>
+      <li><a  class='hide'href="portfolio.html">PORTFOLIO</a></li>
+      <li><a href="the-story.html">THE STORY</a></li>
+      <li><a href="services.html">SERVICES</a></li>
+      <li><a href="http://trendandfayre.tumblr.com/"target="_blank">MOODBOARD</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
     </ul>
   </nav>
 </header>
@@ -32,11 +31,11 @@
 
 <div class='left-side'>
   <h1><a href="index.html">TREND & FAYRE</a></h1>
-  <img src="img/logo.png">
+  <!-- <img src="img/logo.png"> -->
 </div>
 
 <div class='right-side'>
-  <h1><a href="coming-soon.html">ONLINE SHOP</a></h1>
+  <h1><a href="portfolio.html">PORTFOLIO</a></h1>
 </div>
 
 </div>
@@ -66,6 +65,11 @@
       </div>
   </div>
 
+</div>
+<div class='shop-footer'>
+	<div class='shop-link'>
+		<a href="">ONLINE SHOP</a>
+	</div>
 </div>
 
 
@@ -112,11 +116,13 @@
         $(window).resize(function(){
            console.log('resize called');
            var width = $(window).width();
-           if(width < 782){
-               $('.left-side, .right-side').fadeOut(300);
+           if(width < 1280){
+               $('.left-side, .right-side').fadeOut(500);
+               $('.hide').fadeIn(500);
            }
            else{
-            $('.left-side, .right-side').fadeIn(300);
+            $('.left-side, .right-side').fadeIn(500);
+            $('.hide').fadeOut(500);
            }
         })
         .resize();

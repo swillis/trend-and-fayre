@@ -60,11 +60,13 @@
         $(window).resize(function(){
            console.log('resize called');
            var width = $(window).width();
-           if(width < 782){
-               $('.left-side, .right-side').fadeOut(300);
+           if(width < 1280){
+               $('.left-side, .right-side').fadeOut(500);
+               $('.hide').fadeIn(500);
            }
            else{
-            $('.left-side, .right-side').fadeIn(300);
+            $('.left-side, .right-side').fadeIn(500);
+            $('.hide').fadeOut(500);
            }
         })
         .resize();

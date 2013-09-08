@@ -5,7 +5,7 @@
 
 header {
   text-align: center;
-  margin: 20px 0;
+  margin: 40px 0 10px;
 
   nav {
     position: relative;
@@ -15,8 +15,8 @@ header {
     ul {
       li {
         display: inline;
-        margin: 5px;
-        font-size: 28px;
+        margin: 0 15px;
+        font-size: 20px;
         text-transform: capitalize;
         position: relative;
         a {
@@ -26,6 +26,9 @@ header {
           &:hover {
             border-bottom: 3px solid black;
           }
+        }
+        a.hide {
+          display: none;
         }
         &:hover > ul {
           display: block;
@@ -41,37 +44,33 @@ header {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 28px;
     font-weight: 400;
 
     a:hover {
-      border-bottom: 5px solid black;
+      border-bottom: 3px solid black;
     }
   }
 
 #left-and-right {
-  // position: absolute;
-  margin: 0 auto;
-  // top: 0;
-  // left: 50%;
-  // margin-left: -450px;
-  max-height: 600px;
-  width: 65%;
   position: relative;
+  margin: 0 auto;
+  width: 65%;
+
+  .left-side,
+  .right-side {
+    top: 260px;
+  }
 
   .left-side {
     position: absolute;
-    top: 250px;
-    // height: 100%;
-    left: -245px;
-    z-index: 100;
+    left: -151px;
 
     h1 {
       .transform (rotate(270deg));
     }
 
     img {
-    position: absolute;
     top: 260px;
     left: 41%;
     }
@@ -79,37 +78,14 @@ h1 {
 
   .right-side {
     position: absolute;
-    top: 250px;
-    right: -233px;
     .transform (rotate(90deg));
-    z-index: 10;
+    right: -127px;
   }
 }
 
-.portfolio-nav {
-
-  ul {
-    text-align: center;
-    margin: -20px 0 15px;
-
-    li {
-      display: inline;
-      margin: 5px;
-      font-size: 18px;
-      position: relative;
-      font-weight: 300;
-      a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: @primary;
-
-        &:hover {
-          border-bottom: 2px solid black;
-        }
-      }
-      &:hover > ul {
-        display: block;
-      }
-    }
+@media screen and (min-width: 960px) {
+  .left-side,
+  .right-side {
+    top: 10px;
   }
 }
