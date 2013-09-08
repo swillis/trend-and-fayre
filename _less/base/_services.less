@@ -10,6 +10,13 @@
 	.polaroid {
 		float: left;
 		margin: 0 6px;
+		// .transition (all 1000ms)
+
+		&:hover {
+			.transition (all 150ms);
+			position: relative;
+			top: -5px;
+		}
 	}
 
 	.interior-design {
@@ -27,5 +34,58 @@
 	.interior-design,
 	.consulting {
 		padding-top: 30px;
+	}
+}
+
+.service-div {
+	border: 3px solid black;
+
+	.service-segment {
+		width: 50%;
+		height: 100%;
+		float: left;
+		position: relative;
+	}
+
+	.image {
+		background: url('/img/slider-1.jpg') no-repeat top left;
+		background-size: 100%;
+	}
+
+	.copy {
+		text-align: center;
+		padding: 30px 30px;
+
+		h2 {
+			text-transform: uppercase;
+			margin: 0 0 30px;
+		}
+		h3 {
+			padding: 5px 0 10px;
+		}
+		p {
+			margin: 0 0 10px;
+		}
+
+		.contact-button {
+			position: absolute;
+			bottom: 50px;
+			right: 0;
+			left: 0;
+
+			a {
+				text-transform: uppercase;
+				border: 2px solid black;
+				padding: 10px 30px;
+				letter-spacing: 1px;
+				font-size: 16px;
+				.transition (all 200ms);
+
+				&:hover {
+					background: black;
+					color: white;
+				}
+			}
+		}
 	}
 }

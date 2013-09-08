@@ -653,6 +653,9 @@ i.icon {
     right: 0;
   }
 }
+.story-box {
+  padding: 30px 0;
+}
 .story-box a:hover {
   border-bottom: 2px solid black;
 }
@@ -677,7 +680,6 @@ i.icon {
   overflow: auto;
 }
 #background {
-  padding: 30px 0;
   margin: 0 auto;
   max-height: 600px;
   width: 65%;
@@ -699,6 +701,14 @@ i.icon {
   float: left;
   margin: 0 6px;
 }
+.services .polaroid:hover {
+  -webkit-transition: all 150ms;
+  -moz-transition: all 150ms;
+  -ms-transition: all 150ms;
+  -o-transition: all 150ms;
+  position: relative;
+  top: -5px;
+}
 .services .interior-design {
   -webkit-transform: rotate(355deg);
   -moz-transform: rotate(355deg);
@@ -714,4 +724,52 @@ i.icon {
 .services .interior-design,
 .services .consulting {
   padding-top: 30px;
+}
+.service-div {
+  border: 3px solid black;
+}
+.service-div .service-segment {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.service-div .image {
+  background: url('/img/slider-1.jpg') no-repeat top left;
+  background-size: 100%;
+}
+.service-div .copy {
+  text-align: center;
+  padding: 30px 30px;
+}
+.service-div .copy h2 {
+  text-transform: uppercase;
+  margin: 0 0 30px;
+}
+.service-div .copy h3 {
+  padding: 5px 0 10px;
+}
+.service-div .copy p {
+  margin: 0 0 10px;
+}
+.service-div .copy .contact-button {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  left: 0;
+}
+.service-div .copy .contact-button a {
+  text-transform: uppercase;
+  border: 2px solid black;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+}
+.service-div .copy .contact-button a:hover {
+  background: black;
+  color: white;
 }
