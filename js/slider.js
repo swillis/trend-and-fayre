@@ -2,10 +2,8 @@
 $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide",
-    itemWidth: 210,
-    itemMargin: -10,
-    minItems: 2,
-    maxItems: 2,
+    itemWidth: 450,
+    itemMargin: 10,
     controlNav: false,
     directionNav: false
   });
