@@ -364,6 +364,10 @@ i.icon {
 .contact p.email {
   font-size: 18px;
 }
+.contact-image {
+  background: url('/img/contact.jpg') no-repeat top left;
+  background-size: 100%;
+}
 .modalDialog {
   text-align: center;
   position: fixed;
@@ -503,6 +507,7 @@ i.icon {
   display: none;
   -webkit-backface-visibility: hidden;
   margin-right: 5px;
+  width: auto !important;
 }
 .portfolio .flexslider .slides img {
   width: 100%;
@@ -744,6 +749,10 @@ i.icon {
 .services li a:hover {
   background: black;
   color: white;
+}
+.service-image {
+  background: url('/img/services-photo.jpg') no-repeat top left !important;
+  background-size: 100%;
 }
 .service-div {
   border: 3px solid black;
