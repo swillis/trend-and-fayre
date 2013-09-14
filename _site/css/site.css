@@ -35,6 +35,9 @@ header nav {
   margin: 0 auto;
   z-index: 9999;
 }
+header nav ul {
+  min-width: 960px;
+}
 header nav ul li {
   display: inline;
   margin: 0 15px;
@@ -672,13 +675,16 @@ i.icon {
 }
 .portfolio-nav ul.sub-menu {
   margin: 15px auto 10px;
+  min-width: 960px;
 }
 .portfolio-nav ul.sub-menu li {
   display: inline;
-  margin: 10px;
+  margin: 15px;
 }
 .portfolio-nav ul.sub-menu li a {
   color: #777;
+  font-weight: 300;
+  font-size: 14px;
 }
 .portfolio-nav ul.sub-menu li a:hover {
   color: black;
@@ -691,7 +697,8 @@ i.icon {
 }
 .story-box h2,
 .story-box h3 {
-  font-family: "futura-pt-condensed";
+  font-family: "futura-pt";
+  font-weight: 300;
   text-align: center;
 }
 .story-box h2 {
@@ -699,15 +706,26 @@ i.icon {
   margin: 10px 0;
 }
 .story-box h3 {
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #626262;
 }
 .story-box > div {
-  width: 500px;
+  width: 400px;
   position: relative;
   margin: 0 auto;
   padding: 10px 40px 30px;
   background: white;
   overflow: auto;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+.story-box > div p {
+  font-weight: 300;
+}
+.story-box > div .intro {
+  font-weight: 400;
 }
 #background {
   margin: 0 auto;
@@ -724,7 +742,7 @@ i.icon {
 .services {
   position: absolute;
   top: 50%;
-  margin-top: -45px;
+  margin-top: -29px;
   right: 0;
   left: 0;
 }
@@ -737,14 +755,19 @@ i.icon {
   margin: 0 10px;
 }
 .services li a {
-  border: 2px solid black;
-  padding: 10px 30px;
+  background: white;
+  color: black;
+  font-size: 18px;
+  padding: 13px 35px;
   letter-spacing: 1px;
   text-transform: uppercase;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -ms-transition: all 300ms;
   -o-transition: all 300ms;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 .services li a:hover {
   background: black;

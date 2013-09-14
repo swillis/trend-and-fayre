@@ -18,8 +18,8 @@
   <nav>
     <ul class='header-ul'>
       <!-- <li class='one'><a href="">HOME</a></li> -->
-      <li><a  class='hide'href="index.html">HOME</a></li>
-      <li><a  class='hide'href="portfolio-lawford.html">PORTFOLIO</a></li>
+      <li class='hide' ><a href="index.html">HOME</a></li>
+      <li class='hide' ><a href="portfolio-lawford.html">PORTFOLIO</a></li>
       <li><a href="the-story.html">THE STORY</a></li>
       <li><a href="services.html">SERVICES</a></li>
       <li><a href="http://trendandfayre.tumblr.com/"target="_blank">MOODBOARD</a></li>
@@ -48,7 +48,7 @@
 <!--         <div class='bio-pic'>
           <img src="img/bio-pic.png">
         </div> -->
-        <p>
+        <p class='intro'>
           Trend and Fayre is a fully flexible service created by designer Kiri Barker to offer affordable interiors for those lacking in time, inspiration and budget.
         </p>
         <br>
@@ -59,6 +59,7 @@
         <h3>
           This is where l thought I could help...
         </h3>
+        <br>
         <p>
           After years working as a prop stylist and set designer, l know how to create great results from barely existent budgets. By clever sourcing and mixing interesting pieces together in unusual ways, I can help you take a place out of the bland and into the exciting and unexpected, no matter what your budget. Be it through the free sourcing service, a personalized step-by-step online e-decorating package, a low-key consultation, a full interior design overhaul or by simply heading over to the shop for a peak at our stock.”
         </p>
@@ -66,6 +67,7 @@
   </div>
 
 </div>
+
 <div class='shop-footer'>
 	<div class='shop-link'>
 		<a href="">ONLINE SHOP</a>
@@ -121,7 +123,7 @@
                $('.hide').fadeIn(500);
            }
            else{
-            $('.left-side, .right-side').fadeIn(500);
+            $('.left-side, .right-side').hide().fadeIn(500);
             $('.hide').fadeOut(500);
            }
         })

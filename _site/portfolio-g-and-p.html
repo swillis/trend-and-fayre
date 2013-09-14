@@ -18,8 +18,8 @@
   <nav>
     <ul class='header-ul'>
       <!-- <li class='one'><a href="">HOME</a></li> -->
-      <li><a  class='hide'href="index.html">HOME</a></li>
-      <li><a  class='hide'href="portfolio-lawford.html">PORTFOLIO</a></li>
+      <li class='hide' ><a href="index.html">HOME</a></li>
+      <li class='hide' ><a href="portfolio-lawford.html">PORTFOLIO</a></li>
       <li><a href="the-story.html">THE STORY</a></li>
       <li><a href="services.html">SERVICES</a></li>
       <li><a href="http://trendandfayre.tumblr.com/"target="_blank">MOODBOARD</a></li>
@@ -29,11 +29,11 @@
 </header>
 <div class='portfolio-nav'>
 	<ul class='sub-menu'>
-	  <li><a href="portfolio-lawford.html">Lawford</a></li>
-	  <li><a href="portfolio-stanley.html">Stanley</a></li>
-	  <li><a href="portfolio-myrtle.html">Myrtle</a></li>
-	  <li><a href="portfolio-aidan.html">Aidan</a></li>
-	  <li><a href="portfolio-g-and-p.html">G+P</a></li>
+	  <li><a href="portfolio-lawford.html">Kentish Town Apartment</a></li>
+	  <li><a href="portfolio-stanley.html">Nottinghill Town House</a></li>
+	  <li><a href="portfolio-myrtle.html">Somerset Cottage</a></li>
+	  <li><a href="portfolio-aidan.html">Gloucester Road Aparment</a></li>
+	  <li><a href="portfolio-g-and-p.html">Good and Proper Tea Co.</a></li>
 	  <li><a href="portfolio-set-design.html">Set Design</a></li>
 	</ul>
 </div>
@@ -41,25 +41,26 @@
     <section class="slider">
       <div class="flexslider">
         <ul class="slides">
-<!--           <li>
-            <img src="img/backup-image.png" />
-          </li> -->
           <li>
-            <img src="img/slider-1.jpg" />
+            <img src="img/portfolio/G+P/1.jpg" />
           </li>
           <li>
-            <img src="img/slider-2.jpg" />
+            <img src="img/portfolio/G+P/2.jpg" />
           </li>
           <li>
-            <img src="img/slider-3.jpg" />
+            <img src="img/portfolio/G+P/3.jpg" />
           </li>
           <li>
-            <img src="img/kitchen_adventurer_caramel.jpg" />
+            <img src="img/portfolio/G+P/5.jpg" />
+          </li>
+          <li>
+            <img src="img/portfolio/G+P/6.jpg" />
           </li>
         </ul>
       </div>
     </section>
   </div>
+
 <div class='shop-footer'>
 	<div class='shop-link'>
 		<a href="">ONLINE SHOP</a>
@@ -115,7 +116,7 @@
                $('.hide').fadeIn(500);
            }
            else{
-            $('.left-side, .right-side').fadeIn(500);
+            $('.left-side, .right-side').hide().fadeIn(500);
             $('.hide').fadeOut(500);
            }
         })

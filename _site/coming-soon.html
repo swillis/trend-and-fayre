@@ -18,8 +18,8 @@
   <nav>
     <ul class='header-ul'>
       <!-- <li class='one'><a href="">HOME</a></li> -->
-      <li><a  class='hide'href="index.html">HOME</a></li>
-      <li><a  class='hide'href="portfolio-lawford.html">PORTFOLIO</a></li>
+      <li class='hide' ><a href="index.html">HOME</a></li>
+      <li class='hide' ><a href="portfolio-lawford.html">PORTFOLIO</a></li>
       <li><a href="the-story.html">THE STORY</a></li>
       <li><a href="services.html">SERVICES</a></li>
       <li><a href="http://trendandfayre.tumblr.com/"target="_blank">MOODBOARD</a></li>
@@ -92,7 +92,7 @@
                $('.hide').fadeIn(500);
            }
            else{
-            $('.left-side, .right-side').fadeIn(500);
+            $('.left-side, .right-side').hide().fadeIn(500);
             $('.hide').fadeOut(500);
            }
         })
