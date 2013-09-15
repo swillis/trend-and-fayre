@@ -368,7 +368,7 @@ i.icon {
   font-size: 18px;
 }
 .contact-image {
-  background: url('/img/contact.jpg') no-repeat top left;
+  background: url('../img/contact.jpg') no-repeat top left;
   background-size: 100%;
 }
 .modalDialog {
@@ -742,7 +742,7 @@ i.icon {
 .services {
   position: absolute;
   top: 50%;
-  margin-top: -29px;
+  margin-top: -26px;
   right: 0;
   left: 0;
 }
@@ -752,13 +752,13 @@ i.icon {
 }
 .services li {
   display: inline;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 .services li a {
   background: white;
   color: black;
   font-size: 18px;
-  padding: 13px 35px;
+  padding: 15px 40px;
   letter-spacing: 1px;
   text-transform: uppercase;
   -webkit-transition: all 300ms;
@@ -774,7 +774,7 @@ i.icon {
   color: white;
 }
 .service-image {
-  background: url('/img/services-photo.jpg') no-repeat top left !important;
+  background: url('../img/services-photo.jpg') no-repeat top left !important;
   background-size: 100%;
 }
 .service-div {
@@ -787,12 +787,27 @@ i.icon {
   position: relative;
 }
 .service-div .image {
-  background: url('/img/slider-1.jpg') no-repeat top left;
+  background: url('../img/slider-1.jpg') no-repeat top left;
   background-size: 100%;
+}
+.service-div .sourcing {
+  background: url('../img/sourcing.jpg') no-repeat top left;
+  background-position: -10px;
+}
+.service-div .interior-design {
+  background: url('../img/interior-design.jpg') no-repeat top left;
+}
+.service-div .consulting {
+  background: url('../img/consulting.jpg') no-repeat top left;
 }
 .service-div .copy {
   text-align: center;
   padding: 30px 30px;
+}
+.service-div .copy h2,
+.service-div .copy h3,
+.service-div .copy p {
+  font-weight: 300;
 }
 .service-div .copy h2 {
   text-transform: uppercase;
