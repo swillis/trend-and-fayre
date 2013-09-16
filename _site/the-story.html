@@ -21,12 +21,14 @@
       <li class='hide' ><a href="index.html">HOME</a></li>
       <li class='hide' ><a href="portfolio-lawford.html">PORTFOLIO</a></li>
       <li><a href="the-story.html">THE STORY</a></li>
-      <li><a href="services.html">SERVICES</a></li>
+      <li><a href="services.html">WHAT I DO</a></li>
       <li><a href="http://trendandfayre.tumblr.com/"target="_blank">MOODBOARD</a></li>
       <li><a href="contact.html">CONTACT</a></li>
     </ul>
   </nav>
 </header>
+
+
 <div id='left-and-right'>
 
 <div class='left-side'>
@@ -43,7 +45,7 @@
 <div id='background' class='story-bg'>
 
   <div id="the-story" class="story-box">
-      <div class=''>
+      <div>
         <h2>The Story</h2>
 <!--         <div class='bio-pic'>
           <img src="img/bio-pic.png">
@@ -51,17 +53,14 @@
         <p class='intro'>
           Trend and Fayre is a fully flexible service created by designer Kiri Barker to offer affordable interiors for those lacking in time, inspiration and budget.
         </p>
-        <br>
         <p>
           “I’ve launched Trend and Fayre to help people think outside the box and create unique interiors without having to break the bank. The idea came about after countless friends came to me for advice on how to decorate. l realised that people’s homes often look the same because they simply don’t know where to start, what direction to go in or they panic that their budget wont allow them to buy anywhere but the generic shops and websites and they are afraid to take risks. So despite people’s best efforts to create a home that reflects their own personal style, many end up in uninspiring environments.
         </p>
-        <br>
         <h3>
-          This is where l thought I could help...
+          This is where I thought I could help...
         </h3>
-        <br>
         <p>
-          After years working as a prop stylist and set designer, l know how to create great results from barely existent budgets. By clever sourcing and mixing interesting pieces together in unusual ways, I can help you take a place out of the bland and into the exciting and unexpected, no matter what your budget. Be it through the free sourcing service, a personalized step-by-step online e-decorating package, a low-key consultation, a full interior design overhaul or by simply heading over to the shop for a peak at our stock.”
+          After years working as a prop stylist and set designer, l know how to create great results from barely existent budgets. By clever sourcing and mixing interesting pieces together in unusual ways, I can help you take a place out of the bland and into the exciting and unexpected, no matter what your budget.
         </p>
       </div>
   </div>
@@ -99,18 +98,14 @@
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
-          var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src='//www.google-analytics.com/ga.js';
-          s.parentNode.insertBefore(g,s)}(document,'script'));
-      </script>
-      <script type="text/javascript">
-        var container = document.querySelector('#container');
-        var msnry = new Masonry( container, {
-          // options
-          columnWidth: 300,
-          itemSelector: '.item'
-        });
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44079926-1', 'trendandfayre.com');
+        ga('send', 'pageview');
+
       </script>
 
       <script type="text/javascript">
@@ -128,6 +123,8 @@
            }
         })
         .resize();
+
+        $('.splash-header').hide().delay(300).fadeIn(800);
 
       </script>
 

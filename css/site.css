@@ -108,11 +108,12 @@ h1 a:hover {
     top: 10px;
   }
 }
-body {
-  font-family: futura-pt;
-}
-body p {
-  color: #626262;
+@font-face {
+  font-family: 'impact_labelregular';
+  src: url('../fonts/impact_label-webfont.eot');
+  src: url('../fonts/impact_label-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/impact_label-webfont.woff') format('woff'), url('../fonts/impact_label-webfont.ttf') format('truetype'), url('../fonts/impact_label-webfont.svg#impact_labelregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'entypo';
@@ -120,6 +121,19 @@ body p {
   src: url('../entypo/entypo-webfont.eot?#iefix') format('embedded-opentype'), url('../entypo/entypo.woff') format('woff'), url('../entypo/entypo.ttf') format('truetype'), url('../entypo/entypo.svg') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: 'impact_label_reversedregular';
+  src: url('../fonts/impact_label_reversed-webfont.eot');
+  src: url('../fonts/impact_label_reversed-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/impact_label_reversed-webfont.woff') format('woff'), url('../fonts/impact_label_reversed-webfont.ttf') format('truetype'), url('../fonts/impact_label_reversed-webfont.svg#impact_label_reversedregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: futura-pt;
+}
+body p {
+  color: #626262;
 }
 i.icon {
   font-style: normal;
@@ -353,8 +367,8 @@ i.icon {
   color: black;
 }
 .contact h1 {
-  letter-spacing: 4px;
-  font-size: 48px;
+  font-size: 58px;
+  font-family: 'impact_labelregular';
 }
 .contact h2 {
   letter-spacing: 6px;
@@ -434,29 +448,51 @@ i.icon {
   overflow: scroll;
   height: 100%;
 }
-.coming-soon {
+.splash {
+  position: absolute;
   text-align: center;
+  background: black;
+  height: 100%;
+  width: 100%;
 }
-.coming-soon i {
-  font-size: 7em;
+.splash .splash-header {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
 }
-.coming-soon p {
+.splash .splash-outer {
+  top: 50%;
+  margin-top: -111px;
+}
+.splash h1.coming,
+.splash h2,
+.splash a {
+  -webkit-font-smoothing: antialiased;
+  font-family: "futura-pt";
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+.splash h1.coming {
+  letter-spacing: -1px;
+  font-size: 38px;
+}
+.splash h2 {
+  letter-spacing: 7px;
+  margin-bottom: 25px;
+}
+.splash a {
   font-size: 18px;
-  margin-bottom: 30px;
+  padding: 10px 97px;
+  border: 2px solid white;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
-.coming-soon a:hover {
-  border-bottom: 2px solid black;
-}
-.coming-soon h1.coming {
-  font-family: "futura-pt-condensed";
-  font-weight: 700;
-  margin-top: -20px;
-}
-.coming-soon h3 {
-  margin-top: 50px;
-  font-family: "futura-pt-condensed";
-  font-weight: 700;
-  font-size: 24px;
+.splash a:hover {
+  background: white;
+  color: black;
 }
 .portfolio {
   /*
@@ -682,12 +718,13 @@ i.icon {
   margin: 15px;
 }
 .portfolio-nav ul.sub-menu li a {
-  color: #777;
+  color: black;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: 'impact_labelregular';
 }
 .portfolio-nav ul.sub-menu li a:hover {
-  color: black;
+  color: #333;
 }
 .story-box {
   padding: 30px 0;
@@ -695,26 +732,32 @@ i.icon {
 .story-box a:hover {
   border-bottom: 2px solid black;
 }
+.story-box p,
+.story-box h3 {
+  margin-bottom: 10px;
+}
 .story-box h2,
 .story-box h3 {
-  font-family: "futura-pt";
   font-weight: 300;
   text-align: center;
+  font-family: 'impact_labelregular';
 }
 .story-box h2 {
-  font-size: 40px;
-  margin: 10px 0;
+  font-size: 30px;
+  margin: 10px 0 30px;
 }
 .story-box h3 {
   font-size: 16px;
   font-weight: 400;
-  color: #626262;
+  color: black;
+  letter-spacing: -1px;
+  font-family: 'impact_label_reversedregular';
 }
 .story-box > div {
   width: 400px;
   position: relative;
   margin: 0 auto;
-  padding: 10px 40px 30px;
+  padding: 10px 40px 10px;
   background: white;
   overflow: auto;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
@@ -802,7 +845,7 @@ i.icon {
 }
 .service-div .copy {
   text-align: center;
-  padding: 30px 30px;
+  padding: 30px 40px;
 }
 .service-div .copy h2,
 .service-div .copy h3,
@@ -812,9 +855,17 @@ i.icon {
 .service-div .copy h2 {
   text-transform: uppercase;
   margin: 0 0 30px;
+  font-family: 'impact_labelregular';
+  font-size: 30px;
+  -webkit-transform: rotate(357deg);
+  -moz-transform: rotate(357deg);
+  -ms-transform: rotate(357deg);
+  -o-transform: rotate(357deg);
 }
 .service-div .copy h3 {
-  padding: 5px 0 10px;
+  padding: 15px 0 15px;
+  font-family: 'impact_label_reversedregular';
+  font-size: 24px;
 }
 .service-div .copy p {
   margin: 0 0 10px;
