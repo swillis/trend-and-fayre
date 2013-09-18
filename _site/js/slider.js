@@ -5,7 +5,8 @@ $(window).load(function() {
     itemWidth: 900,
     itemMargin: 10,
     controlNav: false,
-    directionNav: false,
-    move: 2
+    directionNav: true,
+    move: 2,
+    slideshow: false
   });
 });

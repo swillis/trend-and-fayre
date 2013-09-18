@@ -144,9 +144,8 @@ i.icon {
 .homepage {
   position: relative;
   z-index: 1;
-  width: 65%;
   margin: 0 auto;
-  max-width: 900px;
+  width: 900px;
   height: 600px;
   /*
 	 * jQuery FlexSlider v2.0
@@ -199,9 +198,10 @@ i.icon {
   display: none;
   -webkit-backface-visibility: hidden;
   margin-right: 5px;
+  width: auto !important;
 }
 .homepage .flexslider .slides img {
-  width: 100%;
+  height: 100%;
   display: block;
 }
 .homepage .flex-pauseplay span {
@@ -802,7 +802,7 @@ i.icon {
 .services li a {
   background: white;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   padding: 15px 40px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -813,13 +813,14 @@ i.icon {
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  font-family: 'impact_label_reversedregular';
 }
 .services li a:hover {
   background: black;
   color: white;
 }
 .service-image {
-  background: url('../img/services-photo.jpg') no-repeat top left !important;
+  background: url('../img/services-photo.jpg') no-repeat top !important;
   background-size: 100%;
 }
 .service-div {
