@@ -147,17 +147,6 @@ i.icon {
   margin: 0 auto;
   width: 900px;
   height: 600px;
-  /*
-	 * jQuery FlexSlider v2.0
-	 * http://www.woothemes.com/flexslider/
-	 *
-	 * Copyright 2012 WooThemes
-	 * Free to use under the GPLv2 license.
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	 *
-	 * Contributing author: Tyler Smith (@mbmufffin)
-	 */
-
   /* Browser Resets */
 
   /* FlexSlider Necessary Styles
@@ -252,9 +241,9 @@ i.icon {
 .homepage .flex-direction-nav a {
   width: 30px;
   height: 30px;
-  margin: -20px 0 0;
+  margin: -20px 10px 0;
   display: block;
-  background: url(images/bg_direction_nav.png) no-repeat 0 0;
+  background: url('../img/bg_play_pause.png') no-repeat 0 0;
   position: absolute;
   top: 50%;
   z-index: 1;
@@ -366,21 +355,26 @@ i.icon {
   text-transform: uppercase;
   font-weight: 300;
   color: black;
+  font-family: 'impact_label_reversedregular';
 }
 .contact h1 {
   font-size: 58px;
   font-family: 'impact_labelregular';
+  margin: 20px 0;
+  -webkit-transform: rotate(362deg);
+  -moz-transform: rotate(362deg);
+  -ms-transform: rotate(362deg);
+  -o-transform: rotate(362deg);
 }
 .contact h2 {
-  letter-spacing: 6px;
   font-size: 36px;
 }
 .contact p.phone {
   font-size: 36px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 .contact p.email {
-  font-size: 18px;
+  font-size: 24px;
 }
 .contact-image {
   background: url('../img/contact.jpg') no-repeat top left;
@@ -461,9 +455,16 @@ i.icon {
   left: 50%;
   margin-left: -150px;
 }
+.splash .splash-header img {
+  margin-bottom: 10px;
+}
 .splash .splash-outer {
   top: 50%;
-  margin-top: -111px;
+  margin-top: -172px;
+}
+.splash .subtitle {
+  font-family: 'impact_label_reversedregular';
+  padding-top: 10px;
 }
 .splash h1.coming,
 .splash h2,
@@ -494,6 +495,12 @@ i.icon {
 .splash a:hover {
   background: white;
   color: black;
+}
+.splash .shop {
+  margin: 30px 0;
+}
+.splash p {
+  color: white;
 }
 .portfolio {
   height: 600px;
@@ -605,9 +612,9 @@ i.icon {
 .portfolio .flex-direction-nav a {
   width: 30px;
   height: 30px;
-  margin: -20px 0 0;
+  margin: -20px 20px 0;
   display: block;
-  background: url(images/bg_direction_nav.png) no-repeat 0 0;
+  background: url('../img/bg_play_pause.png') no-repeat 0 0;
   position: absolute;
   top: 50%;
   z-index: 1;
@@ -838,7 +845,7 @@ i.icon {
 }
 .service-div .sourcing {
   background: url('../img/sourcing.jpg') no-repeat top left;
-  background-position: -10px;
+  background-position: 15px;
 }
 .service-div .interior-design {
   background: url('../img/interior-design.jpg') no-repeat top left;
@@ -857,7 +864,7 @@ i.icon {
 }
 .service-div .copy h2 {
   text-transform: uppercase;
-  margin: 0 0 30px;
+  margin: 30px 0 50px;
   font-family: 'impact_labelregular';
   font-size: 30px;
   -webkit-transform: rotate(357deg);
@@ -881,18 +888,19 @@ i.icon {
 }
 .service-div .copy .contact-button a {
   text-transform: uppercase;
-  border: 2px solid black;
-  padding: 10px 30px;
-  letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 24px;
+  font-family: 'impact_labelregular';
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -ms-transition: all 200ms;
   -o-transition: all 200ms;
+  -webkit-transform: rotate(357deg);
+  -moz-transform: rotate(357deg);
+  -ms-transform: rotate(357deg);
+  -o-transform: rotate(357deg);
 }
 .service-div .copy .contact-button a:hover {
-  background: black;
-  color: white;
+  opacity: 0.4;
 }
 .shop-footer {
   width: 30%;
