@@ -454,6 +454,7 @@ i.icon {
   position: absolute;
   left: 50%;
   margin-left: -150px;
+  cursor: pointer;
 }
 .splash .splash-header img {
   margin-bottom: 10px;
@@ -468,7 +469,7 @@ i.icon {
 }
 .splash h1.coming,
 .splash h2,
-.splash a {
+.splash span {
   -webkit-font-smoothing: antialiased;
   font-family: "futura-pt";
   font-weight: 400;
@@ -483,7 +484,7 @@ i.icon {
   letter-spacing: 7px;
   margin-bottom: 25px;
 }
-.splash a {
+.splash span {
   font-size: 18px;
   padding: 10px 97px;
   border: 2px solid white;
@@ -492,7 +493,7 @@ i.icon {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
-.splash a:hover {
+.splash span:hover {
   background: white;
   color: black;
 }
