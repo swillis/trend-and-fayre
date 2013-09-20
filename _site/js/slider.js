@@ -2,11 +2,10 @@
 $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide",
-    itemWidth: 850,
+    itemWidth: 750,
     itemMargin: 10,
     controlNav: false,
     directionNav: true,
-    move: 2,
-    slideshow: false
+    move: 2
   });
 });
