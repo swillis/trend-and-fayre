@@ -6,6 +6,6 @@ $(window).load(function() {
     itemWidth: 894,
     controlNav: false,
     directionNav: true,
-    slideshow: true
+    slideshowSpeed: 4000
   });
 });
