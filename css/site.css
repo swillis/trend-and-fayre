@@ -452,7 +452,7 @@ i.icon {
 .splash .splash-header {
   position: absolute;
   left: 50%;
-  margin-left: -196px;
+  margin-left: -450px;
   cursor: pointer;
 }
 .splash .splash-header img {
@@ -460,7 +460,7 @@ i.icon {
 }
 .splash .splash-outer {
   top: 50%;
-  margin-top: -172px;
+  margin-top: -290px;
 }
 .splash .subtitle {
   font-family: 'impact_label_reversedregular';
@@ -849,7 +849,7 @@ i.icon {
   background-position: 15px;
 }
 .service-div .interior-design {
-  background: url('../img/interior-design.jpg') no-repeat top left;
+  background: url('../img/interior-design.jpg') no-repeat top 7px left 20px;
 }
 .service-div .consulting {
   background: url('../img/consulting.jpg') no-repeat top left;
