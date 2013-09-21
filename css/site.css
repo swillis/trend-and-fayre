@@ -357,7 +357,7 @@ i.icon {
   font-family: 'impact_label_reversedregular';
 }
 .contact h1 {
-  font-size: 58px;
+  font-size: 48px;
   font-family: 'impact_labelregular';
   margin: 20px 0;
   -webkit-transform: rotate(362deg);
@@ -484,9 +484,9 @@ i.icon {
   margin-bottom: 25px;
 }
 .splash span {
-  font-size: 18px;
-  padding: 10px 97px;
-  border: 2px solid white;
+  font-family: 'impact_label_reversedregular';
+  font-size: 24px;
+  padding: 10px 80px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
