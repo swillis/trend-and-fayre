@@ -452,13 +452,23 @@ i.icon {
 .splash .splash-header {
   position: absolute;
   left: 50%;
-  margin-left: -450px;
+  margin-left: -170px;
   cursor: pointer;
 }
 .splash .splash-header img {
   margin-bottom: 10px;
 }
 .splash .splash-outer {
+  top: 50%;
+  margin-top: -124px;
+}
+.splash .shop-header {
+  position: absolute;
+  left: 50%;
+  margin-left: -450px;
+  cursor: pointer;
+}
+.splash .shop-outer {
   top: 50%;
   margin-top: -290px;
 }
