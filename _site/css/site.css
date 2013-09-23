@@ -357,7 +357,7 @@ i.icon {
   font-family: 'impact_label_reversedregular';
 }
 .contact h1 {
-  font-size: 48px;
+  font-size: 40px;
   font-family: 'impact_labelregular';
   margin: 20px 0;
   -webkit-transform: rotate(362deg);
@@ -376,7 +376,7 @@ i.icon {
   font-size: 24px;
 }
 .contact-image {
-  background: url('../img/contact.jpg') no-repeat top left;
+  background: url('../img/contact.jpg') no-repeat top -15px left 25px;
   background-size: 100%;
 }
 .modalDialog {
@@ -460,7 +460,7 @@ i.icon {
 }
 .splash .splash-outer {
   top: 50%;
-  margin-top: -124px;
+  margin-top: -130px;
 }
 .splash .shop-header {
   position: absolute;
@@ -491,20 +491,15 @@ i.icon {
 }
 .splash h2 {
   letter-spacing: 7px;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
 }
 .splash span {
   font-family: 'impact_label_reversedregular';
   font-size: 24px;
-  padding: 10px 80px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
-}
-.splash span:hover {
-  background: white;
-  color: black;
 }
 .splash .shop {
   margin: 30px 0;
@@ -786,9 +781,12 @@ i.icon {
 }
 .story-box > div p {
   font-weight: 300;
+  text-align: justify;
 }
 .story-box > div .intro {
   font-weight: 400;
+  font-family: 'impact_label_reversedregular';
+  color: black;
 }
 #background {
   margin: 0 auto;
@@ -864,6 +862,21 @@ i.icon {
 .service-div .consulting {
   background: url('../img/consulting.jpg') no-repeat top left;
 }
+.service-div .interior,
+.service-div .source,
+.service-div .consult {
+  position: absolute;
+  top: 50%;
+}
+.service-div .interior {
+  margin-top: -218px;
+}
+.service-div .source {
+  margin-top: -273px;
+}
+.service-div .consult {
+  margin-top: -218px;
+}
 .service-div .copy {
   text-align: center;
   padding: 30px 40px;
@@ -892,10 +905,7 @@ i.icon {
   margin: 0 0 10px;
 }
 .service-div .copy .contact-button {
-  position: absolute;
-  bottom: 50px;
-  right: 0;
-  left: 0;
+  margin-top: 30px;
 }
 .service-div .copy .contact-button a {
   text-transform: uppercase;
