@@ -866,13 +866,13 @@ i.icon {
   background-size: auto;
 }
 .service-div .interior h2 {
-  margin-bottom: 105px;
+  margin: 30px 0 105px;
 }
 .service-div .source h2 {
-  margin-bottom: 60px;
+  margin: 30px 0 60px;
 }
 .service-div .consult h2 {
-  margin-bottom: 100px;
+  margin: 30px 0 100px;
 }
 .service-div .copy {
   text-align: center;
@@ -885,7 +885,6 @@ i.icon {
 }
 .service-div .copy h2 {
   text-transform: uppercase;
-  margin: 30px 0 50px;
   font-family: 'impact_labelregular';
   font-size: 30px;
   -webkit-transform: rotate(357deg);
