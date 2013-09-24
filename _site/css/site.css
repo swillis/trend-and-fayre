@@ -35,9 +35,6 @@ header nav {
   margin: 0 auto;
   z-index: 9999;
 }
-header nav ul {
-  min-width: 960px;
-}
 header nav ul li {
   display: inline;
   margin: 0 15px;
@@ -937,6 +934,7 @@ i.icon {
   padding: 3px 10px;
   margin-top: -10px;
   font-size: 20px;
+  text-align: center;
 }
 .shop-footer .shop-link a:hover {
   border-bottom: 3px solid black;
