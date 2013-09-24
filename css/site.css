@@ -865,10 +865,10 @@ i.icon {
   background: url('../img/consulting.jpg') no-repeat top left;
   background-size: auto;
 }
-.service-div .interior {
+.service-div .interior h2 {
   margin-bottom: 105px;
 }
-.service-div .source {
+.service-div .source h2 {
   margin-bottom: 60px;
 }
 .service-div .consult h2 {
