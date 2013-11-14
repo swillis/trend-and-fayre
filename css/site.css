@@ -566,6 +566,7 @@ i.icon {
 }
 .flex-direction-nav {
   *height: 0;
+  margin-bottom: -50px;
 }
 .flex-direction-nav a {
   width: 30px;
@@ -792,7 +793,7 @@ i.icon {
 }
 .shop-footer {
   width: 30%;
-  margin: 0 auto 30px;
+  margin: 40px auto 30px;
   border-top: 3px solid black;
 }
 .shop-footer .shop-link {
