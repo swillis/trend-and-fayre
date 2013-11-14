@@ -1,23 +1,22 @@
-// Can also be used with $(document).ready()
-$(window).load(function() {
+$(document).ready(function() {
+    if($(".flexslider.banners").length > 0) {
+        $('.flexslider.banners').flexslider({
+            animation: "slide",
+            animationLoop: true,
+            controlNav: false,
+            slideshow: false,
+            smoothHeight: true,
+            itemMargin: 100,
+            variableImageWidth: true,
+            move: 0,
+            before: function(slider) {
+          var player = slider.slides.eq(slider.currentSlide).find('iframe.youtube');
 
-  var sum = 0,
-      count = -1,
-      all = $('ul.slides > li');
-  all.each(function() {
-      sum += +$('img:eq(0)', this).width();
-      count++;
-  });
-
-  var avWidth = sum / count;
-
-  $('.flexslider').flexslider({
-    animation: "slide",
-    itemWidth: avWidth,
-    itemMargin: 10,
-    controlNav: false,
-    directionNav: true,
-    // move: 2,
-    slideshow: false
-  });
+        if (player.length !== 0) {
+          var func = 'pauseVideo'; //this === frame ? 'playVideo' : 'pauseVideo'
+          player[0].contentWindow.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
+      },
+        });
+    }
 });
