@@ -15,26 +15,64 @@
         </head>
     <body>
 
-      <a href="trendandfayre.html">
-<div class='splash'>
-  <div class='container splash-outer'>
-  	<div class='splash-header'>
-  		<img src="img/splash-logo.png">
-	    <h1 class='coming'>Trend and Fayre</h1>
-	    <h2 class='subtitle'>&nbsp;Interior Design</h2>
-	    <span href="trendandfayre.html">Enter site</span>
-  </div>
+      <header>
+  <nav>
+    <ul class='header-ul'>
+      <!-- <li class='one'><a href="">HOME</a></li> -->
+      <li class='hide' ><a href="index.html">HOME</a></li>
+      <li class='hide' ><a href="http://trendandfayre.tumblr.com/"target="_blank">MOODBOARD</a></li>
+      <li><a href="the-story.html">THE STORY</a></li>
+      <li><a href="services.html">WHAT&nbsp;I&nbsp;DO</a></li>
+      <li><a href="portfolio-kentish-town.html">PORTFOLIO</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class='homepage'>
+  <div id='left-and-right'>
+	<div class='left-side'>
+	  <h1><a href="index.html">TREND &amp; FAYRE</a></h1>
+	  <img src="img/logo.png">
+	</div>
+
+	<div class='right-side'>
+	  <h1><a href="http://trendandfayre.tumblr.com/"target="_blank">MOODBOARD</a></h1>
+	</div>
 </div>
 
+  <div class='slider-container'>
+    <section class="slider">
+      <div id='home-slider' class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="img/slider-1.jpg" />
+          </li>
+          <li>
+            <img src="img/slider-2.jpg" />
+          </li>
+          <li>
+            <img src="img/slider-3.jpg" />
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>
+<div class='shop-footer'>
+	<div class='shop-link'>
+		<a href="online-shop.html">ONLINE&nbsp;SHOP</a>
+	</div>
+</div>
 
 
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-      <script src="js/slider.js"></script>
+      <script src="js/slider-home.js"></script>
 
       <script defer src="js/jquery.flexslider-min.js"></script>
-  
+
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -52,7 +90,7 @@
         $(window).resize(function(){
            console.log('resize called');
            var width = $(window).width();
-           if(width < 1220){
+           if(width < 1170){
                $('.left-side, .right-side').fadeOut(500);
                $('.hide').fadeIn(500);
            }
@@ -63,7 +101,7 @@
         })
         .resize();
 
-        $('.splash-header, .shop-header').hide().delay(300).fadeIn(800);
+        $('.splash-header').hide().delay(300).fadeIn(800);
 
       </script>
 
