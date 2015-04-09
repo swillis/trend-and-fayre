@@ -54,9 +54,11 @@ h1 {
   }
 
 #left-and-right {
-  position: relative;
-  margin: 0 auto;
-  width: 65%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 
   .left-side,
   .right-side {
@@ -81,7 +83,7 @@ h1 {
   .right-side {
     position: absolute;
     .transform (rotate(90deg));
-    right: -127px;
+    right: -151px;
   }
 }
 

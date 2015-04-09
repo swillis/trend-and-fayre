@@ -68,9 +68,11 @@ h1 a:hover {
   border-bottom: 3px solid black;
 }
 #left-and-right {
-  position: relative;
-  margin: 0 auto;
-  width: 65%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 #left-and-right .left-side,
 #left-and-right .right-side {
@@ -97,7 +99,7 @@ h1 a:hover {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
-  right: -127px;
+  right: -151px;
 }
 @media screen and (min-width: 960px) {
   .left-side,
@@ -375,69 +377,6 @@ i.icon {
 .contact-image {
   background: url('../img/contact.jpg') no-repeat 25px -15px;
   background-size: 100%;
-}
-.modalDialog {
-  text-align: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99999;
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
-}
-.modalDialog .icon {
-  margin-bottom: -30px;
-}
-.modalDialog p {
-  margin-top: -5px;
-}
-.modalDialog span {
-  font-weight: 700;
-}
-.modalDialog a:hover {
-  border-bottom: 2px solid black;
-}
-.modalDialog h2 {
-  font-family: "futura-pt-condensed";
-  font-size: 40px;
-  text-align: center;
-}
-.modalDialog h3 {
-  text-align: center;
-  font-family: "futura-pt-condensed";
-  font-size: 24px;
-}
-.modalDialog .bio-pic {
-  text-align: center;
-}
-.modalDialog:target {
-  opacity: 1;
-  pointer-events: auto;
-}
-.content {
-  max-height: 450px;
-  overflow-y: auto;
-}
-.modalDialog > div {
-  width: 600px;
-  height: 60%;
-  position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  background: #fff;
-}
-.close:hover {
-  background: #00d9ff;
-}
-.modal-properties {
-  overflow: scroll;
-  height: 100%;
 }
 .splash {
   position: absolute;
